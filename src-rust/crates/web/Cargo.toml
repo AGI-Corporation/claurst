@@ -1,0 +1,32 @@
+[package]
+name = "agi-web"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+license.workspace = true
+description = "AGI – Claude-like web interface for the Claude Code Rust port"
+
+[[bin]]
+name = "agi-web"
+path = "src/main.rs"
+
+[dependencies]
+cc-core = { workspace = true }
+cc-api = { workspace = true }
+cc-query = { workspace = true }
+cc-tools = { workspace = true }
+
+axum = { workspace = true }
+tower = { workspace = true }
+tower-http = { workspace = true }
+tokio = { workspace = true }
+futures = { workspace = true }
+serde = { workspace = true }
+serde_json = { workspace = true }
+anyhow = { workspace = true }
+tracing = { workspace = true }
+tracing-subscriber = { workspace = true }
+uuid = { workspace = true }
+chrono = { workspace = true }
+tokio-stream = { workspace = true }
+async-stream = { workspace = true }

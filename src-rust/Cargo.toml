@@ -12,6 +12,7 @@ members = [
     "crates/cli",
     "crates/buddy",
     "crates/plugins",
+    "crates/web",
 ]
 
 [workspace.package]
@@ -103,3 +104,9 @@ cc-mcp = { path = "crates/mcp" }
 cc-bridge = { path = "crates/bridge" }
 cc-buddy = { path = "crates/buddy" }
 cc-plugins = { path = "crates/plugins" }
+
+# Web server
+axum = { version = "0.8", features = ["macros"] }
+tower = { version = "0.5", features = ["util"] }
+tower-http = { version = "0.6", features = ["cors", "fs"] }
+async-stream = "0.3"
