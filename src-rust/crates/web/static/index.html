@@ -665,8 +665,8 @@
           <div class="starter-card" onclick="sendStarter('Explain quantum entanglement simply')">
             <strong>🔬 Science</strong>Explain quantum entanglement in simple terms
           </div>
-          <div class="starter-card" onclick="sendStarter('Write a Python script to analyse CSV data and plot a chart')">
-            <strong>💻 Code</strong>Write a Python script to analyse CSV data
+          <div class="starter-card" onclick="sendStarter('Write a Python script to analyze CSV data and plot a chart')">
+            <strong>💻 Code</strong>Write a Python script to analyze CSV data
           </div>
           <div class="starter-card" onclick="sendStarter('Give me a structured plan to build a SaaS product from scratch')">
             <strong>🚀 Planning</strong>Plan a SaaS product from scratch
@@ -839,7 +839,7 @@ function updateHeader(sess) {
 // ── Messages DOM ──────────────────────────────────────────────────────────
 function clearMessagesDOM() {
   const el = document.getElementById('messages');
-  el.innerHTML = document.getElementById('welcome') ? '' : '';
+  el.innerHTML = '';
   el.appendChild(buildWelcome());
 }
 
@@ -854,8 +854,8 @@ function buildWelcome() {
       <div class="starter-card" onclick="sendStarter('Explain quantum entanglement simply')">
         <strong>🔬 Science</strong>Explain quantum entanglement in simple terms
       </div>
-      <div class="starter-card" onclick="sendStarter('Write a Python script to analyse CSV data and plot a chart')">
-        <strong>💻 Code</strong>Write a Python script to analyse CSV data
+      <div class="starter-card" onclick="sendStarter('Write a Python script to analyze CSV data and plot a chart')">
+        <strong>💻 Code</strong>Write a Python script to analyze CSV data
       </div>
       <div class="starter-card" onclick="sendStarter('Give me a structured plan to build a SaaS product from scratch')">
         <strong>🚀 Planning</strong>Plan a SaaS product from scratch
